@@ -1,0 +1,68 @@
+body {
+  background-color: #eaeaea !important;
+}
+
+.mainImageContainer {
+  width: 100%;
+  position: relative;
+  margin-top: 76px;
+  height: 400px;
+}
+
+.mainTextContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.centeredButtonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mainBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainBlock {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.clampedWidth {
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+}
+
+.portfolioImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pictureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  grid-gap: 1rem;
+}
+
+.gridItem {
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.portfolioImage {
+  object-fit: cover;
+  height: 300px;
+}

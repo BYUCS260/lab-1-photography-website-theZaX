@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Your title here</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <link rel="stylesheet" href="/css/styles.css" />
-  <title>Your title here</title>
-</head>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-  <h1>Portfolio</h1>
-</body>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img style="height: 50px" src="/images/logo-center.svg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/reviews.html">Reviews</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    <div style="height: 76px"></div>
+
+    <div class="mainBox">
+      <div class="clampedWidth">
+        <h2>Portfolio</h2>
+        <p>These images were taken from Unsplash or Lottiefiles</p>
+
+        <div class="pictureGrid">
+          <div class="gridItem">
+            <div style="height: 250px; position: relative; overflow: hidden">
+              <div id="svgContainer"></div>
+            </div>
+            Click
+            <a href="/pages/about.html">here </a>
+            learn about this image
+          </div>
+          <div class="gridItem">
+            <img
+              class="portfolioImage"
+              style="object-fit: cover"
+              src="https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            />
+          </div>
+          <div class="gridItem">
+            <img
+              class="portfolioImage"
+              style="object-fit: cover"
+              src="https://images.unsplash.com/photo-1413752362258-7af2a667b590?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            />
+          </div>
+          <div class="gridItem">
+            <img
+              class="portfolioImage"
+              style="object-fit: cover"
+              src="https://images.unsplash.com/photo-1435732960391-11053ee5e6b6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
+            />
+          </div>
+          <div class="gridItem">
+            <img
+              class="portfolioImage"
+              style="object-fit: cover"
+              src="https://images.unsplash.com/photo-1513875528452-39400945934d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            />
+          </div>
+          <div class="gridItem">
+            <img
+              class="portfolioImage"
+              style="object-fit: cover"
+              src="https://images.unsplash.com/photo-1502786129293-79981df4e689?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"
+            />
+          </div>
+        </div>
+        <p>
+          Visit the github repostitory
+
+          <a href="https://github.com/BYUCS260/lab-1-photography-website-theZaX"
+            >here</a
+          >
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"
+      integrity="sha512-srGxQe2w7s50+5/nNgEVKYtBm15zRylJwdjxYnGEZr3mmHFJKFjA/ImA2OKizVzoIDX8XISMHDI1+az9pnumbQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      /* Shapes */
+      var svgContainer = document.getElementById("svgContainer");
+      var animItem = bodymovin.loadAnimation({
+        wrapper: svgContainer,
+        animType: "svg",
+        loop: true,
+        path: "https://assets10.lottiefiles.com/packages/lf20_f8swhg5f.json",
+      });
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
